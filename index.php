@@ -7,11 +7,13 @@ if (isset($_POST['text'])) {
         '/\s+([ksvzouai])\s+/i',
         '/([0-9]+)\h+([0-9]+|m|m²|l|k|t|h|°C|Kč|lidí|dní|%|€)/',
         '/(§|\*|†|#|&)\s+([0-9]+|[a-zA-Z])/',
+        '/\h+/',
     );
     $replacements1 = array(
         ' $1&nbsp;',
         '$1&nbsp;$2',
         '$1&nbsp;$2',
+        ' ',
     );
     $patterns2 = array(
         '/([0-9]+)\h+([0-9]+|m|m²|l|kg|h|°C|Kč|lidí|dní|%|€)/',
@@ -46,8 +48,7 @@ if (isset($_POST['text'])) {
             <h1>Online nástroj pro zalomení předložek</h1>
             <p><a href="https://prirucka.ujc.cas.cz/?id=880">https://prirucka.ujc.cas.cz/?id=880</a></p>
             <form action="" method="post">
-                <textarea class="uk-textarea" name="text" id="" cols="30" rows="10"><?= $textarea; ?>
-                </textarea>
+                <textarea class="uk-textarea" name="text" id="" cols="30" rows="10"><?= $textarea; ?></textarea>
                 <div class="uk-margin">
                     <button class="uk-button uk-button-primary">Odeslat</button>
                 </div>

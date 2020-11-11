@@ -18,5 +18,6 @@ Nástroj řeší:
 - řeší mezery mezi číslem a zkratkou počítaného předmětu nebo písmennou značkou jednotek a měn, např. 8 hod., 100 m², 10 kg, 16 h, 19 °C, 1 000 000 Kč, 250 €
 - řeší mezery mezi číslem a názvem počítaného jevu, např. 500 lidí, 365 dní, 10 kilogramů
 - mezery v telefonních, faxových a jiných číslech členěných mezerou, např. +420 800 123 987, 723 456 789, 800 11 22 33
+- odstraní vícenásobné mezery a nechá pouze jednu
 
 Další úpravy budou následovat časem.
